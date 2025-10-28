@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Interactive Animation Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="logo">Animatica</div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+      </nav>
+    </header>
+
+    <!-- Image Slider -->
+    <section id="services" class="slider-section">
+      <h2>Our Services</h2>
+      <div class="slider-container">
+        <button class="slider-btn" id="left-btn">&#8592;</button>
+        <div class="image-slider" id="slider">
+          <img src="Rectangle 9.jpg" alt="Service 1" />
+          <img src="Group 2.jpg" alt="Service 2" />
+          <img src="Group 1.jpg" alt="Service 3" />
+          <img src="Group 3.jpg" alt="Service 4" />
+          <img src="Group 5.jpg" alt="Service 5" />
+          <img src="Rectangle 11.jpg" alt="Service 5" />
+        </div>
+        <button class="slider-btn" id="right-btn">&#8594;</button>
+      </div>
+      <!-- Service cards and popup animation -->
+      <div class="cards">
+        <div class="card">
+          <span class="card-title">Design</span
+          ><span class="tooltip">UI/UX, Branding, Graphics</span>
+        </div>
+        <div class="card">
+          <span class="card-title">Development</span
+          ><span class="tooltip">Web Apps, APIs</span>
+        </div>
+        <div class="card">
+          <span class="card-title">SEO</span
+          ><span class="tooltip">Site Audits, Optimization</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <h2>About Us</h2>
+      <p>
+        We provide creative design, robust web development, and smart digital
+        solutions for growing businesses.
+        <span class="hover-info"
+          >Learn more<span class="popup"
+            >Contact us for a free consultation!</span
+          ></span
+        >
+      </p>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
